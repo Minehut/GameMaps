@@ -283,7 +283,7 @@
 </king>
 <score>
     <time>600</time>
-    <limit>-1</limit>
+    <limit>1</limit>
     <king />
     <kills>1</kills>
     <box filter="only-purple" region="purple-depot">
