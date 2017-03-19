@@ -7,8 +7,8 @@
 </authors>
 <time>12m</time>
 <teams>
-    <team id="red" color="dark red" max="5">Red</team>
-    <team id="blue" color="blue" max="5">Blue</team>
+    <team id="red" color="dark red" max="10">Red</team>
+    <team id="blue" color="blue" max="10">Blue</team>
 </teams>
 <respawn delay="7s" auto="true"/>
 <spawns>
