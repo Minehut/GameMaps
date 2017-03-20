@@ -89,13 +89,13 @@
     </kit>
     <kit id="redKit" parents="spawn">
         <helmet color="cd0000" unbreakable="true">leather helmet</helmet>
-        <leggings color="cd0000" unbreakable="true">leather leggings</leggings>
-        <boots color="cd0000" unbreakable="true">leather boots</boots>
+        <leggings unbreakable="true">diamond leggings</leggings>
+        <boots unbreakable="true">diamond boots</boots>
     </kit>
     <kit id="blueKit" parents="spawn">
         <helmet color="0066cc" unbreakable="true">leather helmet</helmet>
-        <leggings color="0066cc" unbreakable="true">leather leggings</leggings>
-        <boots color="0066cc" unbreakable="true">leather boots</boots>
+        <leggings unbreakable="true">diamond leggings</leggings>
+        <boots unbreakable="true">diamond boots</boots>
     </kit>
 </kits>
 <killreward>
@@ -107,8 +107,8 @@
     <item>arrow</item>
     <item>leather helmet</item>
     <item>chainmail chestplate</item>
-    <item>leather leggings</item>
-    <item>leather boots</item>
+    <item>diamond leggings</item>
+    <item>diamond boots</item>
 </itemremove>
 <toolrepair>
     <tool>stone sword</tool>
