@@ -81,7 +81,7 @@
 <kits>
     <kit id="spawn">
         <game-mode>adventure</game-mode>
-        <item slot="0" unbreakable="true">stone sword</item>
+        <item slot="0" unbreakable="true">iron sword</item>
         <item slot="1" unbreakable="true">bow</item>
         <item slot="7" amount="1">golden apple</item>
         <item slot="8" amount="16">arrow</item>
@@ -111,7 +111,7 @@
     <item>diamond boots</item>
 </itemremove>
 <toolrepair>
-    <tool>stone sword</tool>
+    <tool>iron sword</tool>
     <tool>bow</tool>
 </toolrepair>
 <filters>
