@@ -7,8 +7,8 @@
 </authors>
 <time>12m</time>
 <teams>
-    <team id="red" color="dark red" max="10">Red</team>
-    <team id="blue" color="blue" max="10">Blue</team>
+    <team id="red" color="dark red" max="5">Red</team>
+    <team id="blue" color="blue" max="5">Blue</team>
 </teams>
 <respawn delay="7s" auto="true"/>
 <spawns>
@@ -81,7 +81,7 @@
 <kits>
     <kit id="spawn">
         <game-mode>adventure</game-mode>
-        <item slot="0" unbreakable="true">iron sword</item>
+        <item slot="0" unbreakable="true">stone sword</item>
         <item slot="1" unbreakable="true">bow</item>
         <item slot="7" amount="1">golden apple</item>
         <item slot="8" amount="16">arrow</item>
@@ -89,13 +89,13 @@
     </kit>
     <kit id="redKit" parents="spawn">
         <helmet color="cd0000" unbreakable="true">leather helmet</helmet>
-        <leggings unbreakable="true">diamond leggings</leggings>
-        <boots unbreakable="true">diamond boots</boots>
+        <leggings color="cd0000" unbreakable="true">leather leggings</leggings>
+        <boots color="cd0000" unbreakable="true">leather boots</boots>
     </kit>
     <kit id="blueKit" parents="spawn">
         <helmet color="0066cc" unbreakable="true">leather helmet</helmet>
-        <leggings unbreakable="true">diamond leggings</leggings>
-        <boots unbreakable="true">diamond boots</boots>
+        <leggings color="0066cc" unbreakable="true">leather leggings</leggings>
+        <boots color="0066cc" unbreakable="true">leather boots</boots>
     </kit>
 </kits>
 <killreward>
@@ -107,11 +107,11 @@
     <item>arrow</item>
     <item>leather helmet</item>
     <item>chainmail chestplate</item>
-    <item>diamond leggings</item>
-    <item>diamond boots</item>
+    <item>leather leggings</item>
+    <item>leather boots</item>
 </itemremove>
 <toolrepair>
-    <tool>iron sword</tool>
+    <tool>stone sword</tool>
     <tool>bow</tool>
 </toolrepair>
 <filters>
