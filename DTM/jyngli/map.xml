@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <map proto="1.4.0">
 <name>Jyngli</name>
-<version>1.0.1</version>
+<version>1.0.2</version>
 <objective>Destroy the opposing team's monuments!</objective>
 <authors>
-    <author uuid="c63bd04f-ad1e-455c-b194-7b1085c31aa3"/> <!-- Dickson_ -->
+    <author uuid="c63bd04f-ad1e-455c-b194-7b1085c31aa3"/> <!-- Schaffung -->
 </authors>
 <contributors>
-    <contributor contribution="XML coding and map improvements." uuid="10c1b730-49b9-4f75-9212-91facc371477"/> <!-- Qixit -->
+    <contributor uuid="10c1b730-49b9-4f75-9212-91facc371477" contribution="XML coding and map improvements."/> <!-- Qixit -->
 </contributors>
 <teams>
-    <team id="cyan" color="dark aqua" max="30" max-overfill="35">Cyan</team>
-    <team id="orange" color="gold" max="30" max-overfill="35">Orange</team>
+    <team id="cyan" color="dark aqua" max="30" max-overfill="34">Cyan</team>
+    <team id="orange" color="gold" max="30" max-overfill="34">Orange</team>
 </teams>
 <modes>
     <mode after="30m" material="beacon"/>
 </modes>
-<destroyables name="Monuments" materials="obsidian" show-progress="true" sparks="true" mode-changes="true">
+<destroyables name="Monuments" materials="obsidian" show-progress="true" repairable="false" mode-changes="true">
     <destroyable id="orange-front-monument" name="Front Monument" owner="orange">
         <region>
             <cuboid min="134,81,-73" max="133,73,-74"/>
@@ -60,18 +60,35 @@
         </post>
     </flag>
 </flags>
-<kits>    
+<spawns>
+    <spawn team="orange" kit="orange-kit">
+        <regions>
+            <block yaw="-130" id="orange-spawn">106.5,64.5,-91.5</block>
+        </regions>
+    </spawn>
+    <spawn team="cyan" kit="cyan-kit">
+        <regions>
+            <block yaw="-45" id="cyan-spawn">106.5,64.5,92.5</block>
+        </regions>
+    </spawn>
+    <default>
+        <regions yaw="-90">
+            <block>-0.5,100,0.5</block>
+        </regions>
+    </default>
+</spawns>
+<kits>
     <kit id="spawn" force="true">
+        <potion duration="10" amplifier="10">heal</potion>
         <item slot="0" unbreakable="true">stone sword</item>
         <item slot="1" unbreakable="true">bow</item>
         <item slot="2" unbreakable="true">diamond pickaxe</item>
         <item slot="3" unbreakable="true">stone axe</item>
-        <item slot="4" amount="32" unbreakable="true">cooked beef</item>
-        <item slot="5" amount="32" unbreakable="true" damage="3">log</item>
+        <item slot="4" amount="32">cooked beef</item>
+        <item slot="5" amount="32" damage="3">log</item>
         <item slot="6" amount="16">glass</item>
         <item slot="8">golden apple</item>
         <item slot="7" amount="16">torch</item>
-        <potion duration="10" amplifier="10">heal</potion>
         <item slot="28" amount="64">arrow</item>
     </kit>
     <kit id="front-monument-kit">
@@ -92,42 +109,6 @@
     <disable>lever</disable>
     <disable>wood button</disable>
 </crafting>
-<itemremove>
-    <item>sapling</item>
-    <item>obsidian</item>
-    <item>prismarine shard</item>
-    <item>flint</item>
-    <item>cobble wall</item>
-    <item>red rose</item>
-    <item>seeds</item>
-    <item>fence</item>
-    <item>dirt</item>
-    <item>bow</item>
-    <item>stone sword</item>
-    <item>diamond pickaxe</item>
-    <item>cooked beef</item>
-    <item>glass</item>
-    <item>stone axe</item>
-    <item>leather boots</item>
-    <item>leather chestplate</item>
-</itemremove>
-<spawns>
-    <spawn team="orange" kit="orange-kit">
-        <regions>
-            <block yaw="-130" id="orange-spawn">106.5,64.5,-91.5</block>
-        </regions>
-    </spawn>
-    <spawn team="cyan" kit="cyan-kit">
-        <regions>
-            <block yaw="-45" id="cyan-spawn">106.5,64.5,92.5</block>
-        </regions>
-    </spawn>
-    <default>
-        <regions yaw="-90">
-            <block>-0.5,100,0.5</block>
-        </regions>
-    </default>
-</spawns>
 <filters>
     <team id="only-orange">orange</team>
     <team id="only-cyan">cyan</team>
@@ -135,7 +116,6 @@
         <void />
     </not>
 </filters>
-<maxbuildheight>130</maxbuildheight>
 <regions>
     <apply block-physics="never">
         <everywhere />
@@ -159,19 +139,19 @@
             <negative><rectangle min="30,-148" max="179,149"/></negative>
         </region>
     </apply>
-    <apply enter="only-cyan" message="`l`fYou may not enter `l`3Cyan Spawn!">
+    <apply enter="only-cyan" message="`l`fYou may not enter `l`3cyan spawn!">
         <region>
             <cuboid min="101,68,100" max="114,53,86"/>
             <cuboid min="119,81,83" max="123,85,78"/>
         </region>
     </apply>
-    <apply enter="only-orange" message="`l`fYou may not enter `l`6Orange Spawn!">
+    <apply enter="only-orange" message="`l`fYou may not enter `l`6orange spawn!">
         <region>
             <cuboid min="114,53,-85" max="101,68,-99"/>
             <cuboid min="123,81,-82" max="119,85,-77"/>
         </region>
     </apply>
-    <apply enter="never" message="`l`fYou may not go near the `l`9Observer Spawn!">
+    <apply enter="never" message="`l`fYou may not go near the `l`9observer spawn!">
         <region>
             <rectangle min="15,-47" max="-35,30"/>
         </region>
@@ -216,4 +196,24 @@
         <region><cuboid min="104,63,-92" max="103,65,-91"/></region>
     </portal>
 </portals>
+<itemremove>
+    <item>sapling</item>
+    <item>obsidian</item>
+    <item>prismarine shard</item>
+    <item>flint</item>
+    <item>cobble wall</item>
+    <item>red rose</item>
+    <item>seeds</item>
+    <item>fence</item>
+    <item>dirt</item>
+    <item>bow</item>
+    <item>stone sword</item>
+    <item>diamond pickaxe</item>
+    <item>cooked beef</item>
+    <item>glass</item>
+    <item>stone axe</item>
+    <item>leather boots</item>
+    <item>leather chestplate</item>
+</itemremove>
+<maxbuildheight>130</maxbuildheight>
 </map>
