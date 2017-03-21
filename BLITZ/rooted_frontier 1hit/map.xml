@@ -25,7 +25,7 @@
 <kits>
     <kit id="default-kit">
         <potion duration="oo">night vision</potion>
-        <potion duration="oo">speed:4</potion>
+        <potion duration="oo">speed</potion>
     </kit>
     <kit id="spawn">
         <item slot="0" unbreakable="true" enchantment="sharpness:1000" material="stone sword" />
