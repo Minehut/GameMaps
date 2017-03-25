@@ -133,7 +133,7 @@
     <item>gold ingot</item>
 </itemkeep>
 <killreward>
-    <item name="Fine Gold" lore="Use this as currency.">gold ingot</item>
+    <item name="`lFine Gold" lore="Use this as currency.">gold ingot</item>
     <item amount="8">arrow</item>
 </killreward>
 <multitrade/>
