@@ -51,12 +51,14 @@
 <kits>
     <kit id="red-kit">
         <leggings unbreakable="true" locked="true" color="C40000">leather leggings</leggings>
+        <potion duration="oo" amplifier="1">glowing</potion>
         <boots unbreakable="true" locked="true" color="C40000" material="leather boots" lore="Fall damage is disabled!">
             <enchantment level="3">frost walker</enchantment>
         </boots>
     </kit>
     <kit id="blue-kit">
         <leggings unbreakable="true" locked="true" color="334CB2">leather leggings</leggings>
+        <potion duration="oo" amplifier="1">glowing</potion>
         <boots unbreakable="true" locked="true" color="334CB2" material="leather boots" lore="Fall damage is disabled!">
             <enchantment level="3">frost walker</enchantment>
         </boots>
