@@ -13,6 +13,7 @@
     <team id="cyan" color="dark aqua" max="30" max-overfill="35">Cyan</team>
     <team id="orange" color="gold" max="30" max-overfill="35">Orange</team>
 </teams>
+<respawn delay="5s" auto="true"/>
 <modes>
     <mode after="30m" material="beacon"/>
 </modes>
