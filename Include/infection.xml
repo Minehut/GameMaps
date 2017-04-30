@@ -11,6 +11,13 @@
 </blitz>
 <respawn auto="true"/>
 <kits>
+    <!-- Give adventure mode above height limit to prevent block glitching -->
+    <kit id="adventure-kit" force="true">
+        <game-mode>adventure</game-mode>
+    </kit>
+    <kit id="survival-kit" force="true">
+        <game-mode>adventure</game-mode>
+    </kit>
     <kit id="zombie-switch-kit" force="true">
         <team-switch team="zombie-team"/>
     </kit>
