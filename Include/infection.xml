@@ -11,13 +11,6 @@
 </blitz>
 <respawn auto="true"/>
 <kits>
-    <!-- Give adventure mode above height limit to prevent block glitching -->
-    <kit id="adventure-kit" force="true">
-        <game-mode>adventure</game-mode>
-    </kit>
-    <kit id="survival-kit" force="true">
-        <game-mode>adventure</game-mode>
-    </kit>
     <kit id="zombie-switch-kit" force="true">
         <team-switch team="zombie-team"/>
     </kit>
@@ -30,6 +23,7 @@
         <item slot="1" unbreakable="true" material="bow"/>
         <item slot="2" material="arrow" amount="64"/>
         <effect duration="oo" amplifier="2">jump</effect>
+        <game-mode>adventure</game-mode>
         <effect duration="5" amplifier="1">increase damage</effect>
     </kit>
     <kit id="zombie-kit-start">
@@ -43,6 +37,7 @@
         <effect duration="10" amplifier="100">weakness</effect>
         <effect duration="10" amplifier="100">slow</effect>
         <effect duration="10" amplifier="129">jump</effect>
+        <game-mode>adventure</game-mode>
         <effect duration="10" amplifier="1">blindness</effect>
     </kit>
     <kit id="human-kit">
@@ -52,6 +47,7 @@
         <boots locked="true" unbreakable="true" material="iron boots"/>
         <item slot="0" unbreakable="true" material="iron sword"/>
         <item slot="1" unbreakable="true" material="bow"/>
+        <game-mode>adventure</game-mode>
         <item slot="2" material="arrow" amount="16"/>
     </kit>
 </kits>
