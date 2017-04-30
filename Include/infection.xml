@@ -29,7 +29,7 @@
         <item slot="0" unbreakable="true" material="stone sword" name="`2`lInfection Sword"/>
         <item slot="1" unbreakable="true" material="bow"/>
         <item slot="2" material="arrow" amount="64"/>
-        <effect duration="10" amplifier=“2”>jump</effect>
+        <effect duration="10" amplifier="2">jump</effect>
         <effect duration="5" amplifier="1">increase damage</effect>
     </kit>
     <kit id="zombie-kit-start">
