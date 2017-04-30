@@ -11,13 +11,6 @@
 </blitz>
 <respawn auto="true"/>
 <kits>
-    <!-- Give adventure mode above height limit to prevent block glitching -->
-    <kit id="adventure-kit" force="true">
-        <game-mode>adventure</game-mode>
-    </kit>
-    <kit id="survival-kit" force="true">
-        <game-mode>adventure</game-mode>
-    </kit>
     <kit id="zombie-switch-kit" force="true">
         <team-switch team="zombie-team"/>
     </kit>
@@ -29,7 +22,7 @@
         <item slot="0" unbreakable="true" material="stone sword" name="`2`lInfection Sword"/>
         <item slot="1" unbreakable="true" material="bow"/>
         <item slot="2" material="arrow" amount="64"/>
-        <effect duration="10" amplifier="2">jump</effect>
+        <effect duration="oo" amplifier="2">jump</effect>
         <effect duration="5" amplifier="1">increase damage</effect>
     </kit>
     <kit id="zombie-kit-start">
@@ -87,13 +80,6 @@
         </all>
     </countdown>
 </filters>
-<regions>
-    <negative id="below-height-limit">
-        <region id="height-limit"/>
-    </negative>
-    <apply block="never" kit="adventure-kit" message="You may not build above the maximum build height!" region="height-limit"/>
-    <apply kit="survival-kit" region="below-height-limit"/>
-</regions>
 <itemremove>
     <item>leather helmet</item>
     <item>leather chestplate</item>
