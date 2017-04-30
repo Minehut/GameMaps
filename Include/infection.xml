@@ -19,7 +19,7 @@
         <chestplate locked="true" unbreakable="true" material="leather chestplate"/>
         <leggings locked="true" unbreakable="true" material="leather leggings"/>
         <boots locked="true" unbreakable="true" material="leather boots"/>
-        <item slot="0" unbreakable="true" material="stone sword" name="`2`lInfection Sword"/>
+        <item slot="0" unbreakable="true" material="iron sword" name="`2`lInfection Sword"/>
         <item slot="1" unbreakable="true" material="bow"/>
         <item slot="2" material="arrow" amount="64"/>
         <effect duration="oo" amplifier="2">jump</effect>
@@ -31,7 +31,7 @@
         <chestplate locked="true" unbreakable="true" material="leather chestplate"/>
         <leggings locked="true" unbreakable="true" material="leather leggings"/>
         <boots locked="true" unbreakable="true" material="leather boots"/>
-        <item slot="0" unbreakable="true" material="stone sword" name="`2`lInfection Sword"/>
+        <item slot="0" unbreakable="true" material="iron sword" name="`2`lInfection Sword"/>
         <item slot="1" unbreakable="true" material="bow"/>
         <item slot="2" material="arrow" amount="64"/>
         <effect duration="10" amplifier="100">weakness</effect>
