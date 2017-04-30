@@ -95,7 +95,6 @@
     <apply kit="survival-kit" region="below-height-limit"/>
 </regions>
 <itemremove>
-    <item>arrow</item>
     <item>leather helmet</item>
     <item>leather chestplate</item>
     <item>leather leggings</item>
