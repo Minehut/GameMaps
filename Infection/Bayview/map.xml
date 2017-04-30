@@ -21,7 +21,7 @@
     </spawn>
     <spawn filter="after-10s" team="zombie-team" kit="zombie-kit">
         <regions yaw="0">
-            <point>66,13.5,-42</point>
+            <point>-66,13.5,-42</point>
         </regions>
     </spawn>
     <spawn filter="after-10s" team="human-team" kit="zombie-switch-kit">
@@ -47,7 +47,7 @@
     <above id="height-limit" y="255"/>
     <apply block="never" message="You may not modify this area!">
         <region>
-            <cuboid min="0,0,0" max="10000,100,1000"/>
+            <cuboid min="-1000,0,-1000" max="10000,100,1000"/>
         </region>
     </apply>
     <apply block="deny-void" message="You may not build outside of the playable region!"/>
