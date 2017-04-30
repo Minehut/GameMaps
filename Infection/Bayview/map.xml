@@ -1,7 +1,7 @@
 <map proto="1.4.0" game="Infection">
 <name>Bayview</name>
 <version>1.1.1</version>
-<objective>Survive the zombie army</objective>
+<objective>Hide from the zombie army!</objective>
 <authors>
     <author uuid="27ac2daf-3c38-4b8e-9448-46f221bb612a"/> <!-- n11ck -->
     <author uuid="39a9e1b5-1e1d-40c0-8c16-69a9568efa72"/> <!-- Teejers -->
