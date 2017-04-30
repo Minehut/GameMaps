@@ -52,7 +52,7 @@
         <boots locked="true" unbreakable="true" material="iron boots"/>
         <item slot="0" unbreakable="true" material="iron sword"/>
         <item slot="1" unbreakable="true" material="bow"/>
-        <item slot="2" material="arrow" amount=“16”/>
+        <item slot="2" material="arrow" amount="16"/>
     </kit>
 </kits>
 <broadcasts>
