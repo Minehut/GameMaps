@@ -16,7 +16,7 @@
     </spawn>
     <spawn filter="before-10s" team="human-team" kit="human-kit">
         <regions yaw="90">
-            <point>-1112,33.5,-856</point>
+            <point>-1538,34,636</point>
         </regions>
     </spawn>
     <spawn filter="after-10s" team="zombie-team" kit="zombie-kit">
@@ -26,12 +26,12 @@
     </spawn>
     <spawn filter="after-10s" team="human-team" kit="zombie-switch-kit">
         <region yaw="90">
-            <point>-1112,33.5,-856</point>
+            <point>-1538,34,636</point>
         </region>
     </spawn>
     <default>
         <regions yaw="-90">
-            <point>-1551,59,79</point>
+            <point>-1551,59,709</point>
         </regions>
     </default>
 </spawns>
