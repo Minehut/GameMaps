@@ -1,10 +1,10 @@
 <map proto="1.4.2" game="Infection">
-<objective>Survive against the Zombies for 7 minutes!</objective>
+<objective>Survive against the Zombies for 10 minutes!</objective>
 <teams>
     <team id="human-team" color="gold" plural="true" min="4" max="80" max-overfill="80">Humans</team>
     <team id="zombie-team" color="dark green" show-name-tags="false" plural="true" min="1" max="20" max-overfill="20">Zombies</team>
 </teams>
-<time result="human-team">7m</time>
+<time result="human-team">10m</time>
 <blitz>
     <lives>999</lives>
     <broadcastLives>false</broadcastLives>
@@ -129,7 +129,7 @@
     </stage>
     <stage title="Humans">
         <message>
-            <line>`fAs a `6`lHuman`f, you have to survive for `b`l7 minutes`f against the `2Zombie`f horde.</line>
+            <line>`fAs a `6`lHuman`f, you have to survive for `b`l10 minutes`f against the `2Zombie`f horde.</line>
             <line>`fIf you die, you join the `2Zombie`f horde!</line>
         </message>
     </stage>
