@@ -1,0 +1,49 @@
+<map proto="1.4.0" game="Infection">
+<name>Grind</name>
+<version>1.1.1</version>
+<objective>Survive the zombie army</objective>
+<authors>
+    <author uuid="27ac2daf-3c38-4b8e-9448-46f221bb612a"/> <!-- n11ck -->
+    <author uuid="39a9e1b5-1e1d-40c0-8c16-69a9568efa72"/> <!-- Teejers -->
+    <author uuid="c4ad59fd-a7c6-42f1-8a5f-5af0aa60353b"/> <!-- Reddemptr -->
+</authors>
+<include src="infection.xml"/>
+<spawns>
+    <spawn filter="before-10s" team="zombie-team" kit="zombie-kit-start">
+        <regions yaw=“90">
+            <point>9,14,-42</point>
+        </regions>
+    </spawn>
+    <spawn filter="before-10s" team="human-team" kit="human-kit">
+        <regions yaw=“-27”>
+            <point>-82,14,-72</point>
+        </regions>
+    </spawn>
+    <spawn filter="after-10s" team="zombie-team" kit="zombie-kit">
+        <regions yaw=“90">
+            <point>9,14,-42</point>
+        </regions>
+    </spawn>
+    <spawn filter="after-10s" team="human-team" kit="zombie-switch-kit">
+        <region yaw=“-27”>
+            <point>-82,14,-72</point>
+        </region>
+    </spawn>
+    <default>
+        <regions yaw=“180">
+            <point>-80,35,5</point>
+        </regions>
+    </default>
+</spawns>
+<filters>
+    <not id="deny-void">
+        <void/>
+    </not>
+    <not id="deny-ender-chest">
+        <material>ender chest</material>
+    </not>
+</filters>
+<itemremove>
+    <item>obsidian</item>
+</itemremove>
+</map>
