@@ -9,8 +9,8 @@
 	<author uuid="19388047-f04b-43ac-9546-22aa69aea75c"/>
 </authors>
 <teams>
-	<team id="green-team" color="dark green" min="2" max="4" plural="true"> Green Guardsmen</team>
-	<team id="red-team" color="red" max="4" min="2" plural="true">Red Guardsmen</team>
+	<team id="green-team" color="dark green" min="2" max="100" plural="true"> Green Guardsmen</team>
+	<team id="red-team" color="red" max="100" min="2" plural="true">Red Guardsmen</team>
 </teams>
 <spawns>
     <spawn team="red-team" kit="red-kit">
