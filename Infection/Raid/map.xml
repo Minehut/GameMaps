@@ -1,0 +1,51 @@
+<map proto="1.4.0" game="Infection">
+<name>Infection: Raid</name>
+<version>1.2.3</version>
+<objective>Survive the zombie army</objective>
+<authors>
+    <author uuid="27ac2daf-3c38-4b8e-9448-46f221bb612a"/> <!-- n11ck -->
+    <author uuid="39a9e1b5-1e1d-40c0-8c16-69a9568efa72"/> <!-- Teejers -->
+    <author uuid="811968c3-0a9f-4cb5-80af-19ce37141341"/> <!-- BennyDoesStuff -->
+    <author uuid="42195cb9-b21b-42f5-b938-5ef46f303fcd"/> <!-- PVTVelociraptor -->
+    <author uuid="b13b0b00-a8f9-422b-8963-b3d18bf80aa6"/> <!-- Bearinx -->
+</authors>
+<include src="infection.xml"/>
+<spawns>
+    <spawn filter="before-10s" team="zombie-team" kit="zombie-kit-start">
+        <regions yaw="-90">
+            <point>-1061,47,-1055</point>
+        </regions>
+    </spawn>
+    <spawn filter="before-10s" team="human-team" kit="human-kit">
+        <regions yaw="180">
+            <point>-980,47,-990</point>
+        </regions>
+    </spawn>
+    <spawn filter="after-10s" team="zombie-team" kit="zombie-kit">
+        <regions yaw="-90">
+            <point>1061,47,-1055</point>
+        </regions>
+    </spawn>
+    <spawn filter="after-10s" team="human-team" kit="zombie-switch-kit">
+        <region yaw="-90">
+            <point>1061,47,-1055</point>
+        </region>
+    </spawn>
+    <default>
+        <regions yaw="180">
+            <point>-980,57,-990</point>
+        </regions>
+    </default>
+</spawns>
+<filters>
+    <not id="deny-void">
+        <void/>
+    </not>
+    <not id="deny-ender-chest">
+        <material>ender chest</material>
+    </not>
+</filters>
+<itemremove>
+    <item>obsidian</item>
+</itemremove>
+</map>
