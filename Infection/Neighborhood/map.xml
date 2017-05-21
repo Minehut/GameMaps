@@ -1,0 +1,51 @@
+<map proto="1.4.0" game="Infection">
+<name>Infection: Neighborhood</name>
+<version>1.1.1</version>
+<objective>Survive the zombie army</objective>
+<authors>
+    <author uuid="42195cb9-b21b-42f5-b938-5ef46f303fcd"/> <!-- PVTVelociraptor -->
+    <author uuid="39a9e1b5-1e1d-40c0-8c16-69a9568efa72"/> <!-- Teejers -->
+    <author uuid="0fee9b73-72ce-4793-926f-c2c45340f480"/> <!-- Nightsent -->
+    <author uuid="816a7c43-992f-4d7d-90f3-b457ab68af20"/> <!-- Aphinity -->
+    <author uuid="5a5a27fa-084e-44ff-803e-a3b856c34b26"/> <!-- Kasperio -->
+</authors>
+<include src="infection.xml"/>
+<spawns>
+    <spawn filter="before-10s" team="zombie-team" kit="zombie-kit-start">
+        <regions yaw="-180">
+            <point>-19,47,-2143</point>
+        </regions>
+    </spawn>
+    <spawn filter="before-10s" team="human-team" kit="human-kit">
+        <regions yaw="-90">
+            <point>26,43,-2208</point>
+        </regions>
+    </spawn>
+    <spawn filter="after-10s" team="zombie-team" kit="zombie-kit">
+        <regions yaw="-180">
+            <point>-19,47,-2143</point>
+        </regions>
+    </spawn>
+    <spawn filter="after-10s" team="human-team" kit="zombie-switch-kit">
+        <region yaw="-180">
+            <point>-19,47,-2143</point>
+        </region>
+    </spawn>
+    <default>
+        <regions yaw="0">
+            <point>27,68,-2234</point>
+        </regions>
+    </default>
+</spawns>
+<filters>
+    <not id="deny-void">
+        <void/>
+    </not>
+    <not id="deny-ender-chest">
+        <material>ender chest</material>
+    </not>
+</filters>
+<itemremove>
+    <item>obsidian</item>
+</itemremove>
+</map>
